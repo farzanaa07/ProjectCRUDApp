@@ -136,7 +136,7 @@ namespace ProjectCRUDApp.Controllers
         public IActionResult ViewRestaurants(int id)
         {
             var food = repository.Food.FindByCondition(r => r.ID == id).FirstOrDefault();
-           var restaurant= repository.Restaurant.FindByCondition(r => r.Food.ID == id).ToList();
+           var restaurant= repository.Restaurant.FindByCondition(r => r.FoodID == id).ToList();
             ViewBag.foodName = food.Name;
             return View(restaurant);
         }
