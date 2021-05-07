@@ -1,0 +1,68 @@
+﻿@model ProjectAppLibrary.Models.Restaurant
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Update Details for  </h1>
+<p>Created on @Model.CreatedAt.ToShortDateString()</p>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Update">
+
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+
+
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="Location" class="control-label"></label>
+                <input asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PictureURL" class="control-label"></label>
+                <input asp-for="PictureURL" class="form-control" />
+                <span asp-validation-for="PictureURL" class="text-danger"></span>
+            </div>
+
+            <span asp-validation-for="Delivery" class="text-danger"></span>
+            <div class="form-group">
+                <label asp-for="Delivery" class="control-label"></label>
+                <select asp-for="Delivery" class="form-control">
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameofDish" class="control-label"></label>
+                <input asp-for="NameofDish" class="form-control" />
+                <span asp-validation-for="NameofDish" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ratings" class="control-label"></label>
+                <input asp-for="ratings" class="form-control" />
+                <span asp-validation-for="ratings" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to All Restaurants</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
