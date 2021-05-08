@@ -41,7 +41,7 @@ stages:
     jobs:
       - job: release
         pool:
-              vmImage: 'ubuntu-latest' 
+              name:farzana-agent-pool 
         steps:
         - task: DownloadBuildArtifacts@0
           inputs:
