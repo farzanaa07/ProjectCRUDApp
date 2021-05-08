@@ -1,0 +1,66 @@
+trigger:
+- master
+
+stages:
+  - stage: build
+    displayName: 'master-branch-build'
+
+    #build jobs
+    jobs: 
+      - job: build
+        pool:
+          farzana-agent-pool
+
+        variables:
+          buildConfiguration: 'Release'
+
+        steps:
+        - task: DotNetCoreCLI@2
+          inputs:
+            command: 'restore'
+            projects: "**/*.csproj"
+            feedsToUse: 'select'
+        - task: DotNetCoreCLI@2
+          inputs:
+            command: 'build'
+            projects: "**/*.csproj"
+            arguments: '--configuration $(BuildConfiguration)'
+        - task: DotNetCoreCLI@2
+          inputs:
+            command: 'publish'
+            publishWebProjects: true
+            arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
+        - task: PublishBuildArtifacts@1
+          inputs:
+            PathtoPublish: '$(build.artifactstagingdirectory)'
+            ArtifactName: 'drop'
+            publishLocation: 'Container'
+  - stage: release
+    displayName: 'deployment-release'
+#release job
+    jobs:
+      - job: release
+        pool:
+              farzana-agent-pool 
+        steps:
+        - task: DownloadBuildArtifacts@0
+          inputs:
+            buildType: 'current'
+            downloadType: 'specific'
+            itemPattern: '**/*.zip'
+            downloadPath: '$(System.ArtifactsDirectory)'
+
+        
+        - task: AzureRmWebAppDeployment@4
+          inputs:
+           ConnectionType: 'AzureRM'
+           azureSubscription: 'farzana-food-app'
+           appType: 'webAppLinux'
+           WebAppName: 'farzana-food-app'
+           packageForLinux: '$(System.DefaultWorkingDirectory)/'
+           RuntimeStack: 'DOTNETCORE|5.0'
+           # Run tests and auto publish test results.
+          
+        - task: DotNetCoreCLI@2
+          inputs:
+           command: 'test'
