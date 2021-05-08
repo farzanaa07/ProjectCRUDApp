@@ -41,7 +41,7 @@ stages:
     jobs:
       - job: release
         pool:
-              name: dotnet-app-pool
+              vmImage: 'ubuntu-latest' 
         steps:
         - task: DownloadBuildArtifacts@0
           inputs:
