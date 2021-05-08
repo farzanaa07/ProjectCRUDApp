@@ -18,12 +18,12 @@ stages:
         - task: DotNetCoreCLI@2
           inputs:
             command: 'restore'
-            projects: '**/*.csproj'
+            projects: ProjectCRUDApp.csproj
             feedsToUse: 'select'
         - task: DotNetCoreCLI@2
           inputs:
             command: 'build'
-            projects: '**/*.csproj'
+            projects: ProjectCRUDApp.csproj
             arguments: '--configuration $(BuildConfiguration)'
         - task: DotNetCoreCLI@2
           inputs:
@@ -59,3 +59,8 @@ stages:
            WebAppName: 'farzana-food-app'
            packageForLinux: '$(System.DefaultWorkingDirectory)/'
            RuntimeStack: 'DOTNETCORE|5.0'
+           # Run tests and auto publish test results.
+          
+        - task: DotNetCoreCLI@2
+          inputs:
+           command: 'test'
