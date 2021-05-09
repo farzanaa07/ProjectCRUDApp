@@ -76,8 +76,9 @@ namespace RestaurantTest
             //Assert
             Assert.NotNull(controllerActionResult);
         }
+        [Fact]
 
-        private void UpdateRestaurant_Test()
+        public void UpdateRestaurant_Test()
         {
             mockRepo.Setup(repo => repo.Restaurant.FindByCondition(r => r.ID == It.IsAny<int>())).Returns(GetRestaurants());
             mockRepo.Setup(repo => repo.Restaurant.Update(GetRestaurant()));
