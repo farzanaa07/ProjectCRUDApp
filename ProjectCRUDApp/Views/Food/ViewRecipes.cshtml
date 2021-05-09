@@ -38,10 +38,7 @@
             <td>
                 <img src="@item.PictureURL" style="height:128px;" />
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PictureURL)
-
-            </td>
+         
             <td>
                 @Html.DisplayFor(modelItem => item.RecipeName)
             </td>
@@ -57,8 +54,14 @@
             <td>
                 @Html.DisplayFor(modelItem => item.LevelofDifficulty)
             </td>
-           >
+            >
         </tr>
         }
     </tbody>
 </table>
+<div>
+    <a asp-action="Index" asp-controller="Food">Back to All Foods</a>
+</div>
+<div>
+    <a asp-action="Index" asp-controller="Recipe">View all recipes</a>
+</div>

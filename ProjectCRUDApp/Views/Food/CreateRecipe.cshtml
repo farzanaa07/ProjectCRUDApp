@@ -24,7 +24,7 @@
 
             <div class="form-group">
                 <label asp-for="Ingredients" class="control-label"></label>
-                <textarea asp-for="Ingredients" rows="10" cols="30"></textarea>
+                <textarea asp-for="Ingredients" rows="10" cols="25"></textarea>
                 <span asp-validation-for="Ingredients" class="text-danger"></span>
             </div>
 
@@ -56,7 +56,7 @@
     </div>
 </div>
 <div>
-    <a asp-action="Index" asp-controller="Recipes">Back to All Recipes</a>
+    <a asp-action="Index" asp-controller="Food">Back to All Foods</a>
 </div>
 
 @section Scripts {

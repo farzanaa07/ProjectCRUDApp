@@ -38,7 +38,7 @@ namespace ProjectCRUDApp.Controllers
         [Route("update/{id:int}")]
         public IActionResult Update(int id) //find recipe and populate the form on this page
             {
-            var RecipebyID = repository.Recipe.FindByCondition(r => r.ID == id).FirstOrDefault(); //Find the cat by its ID in the database
+            var RecipebyID = repository.Recipe.FindByCondition(r => r.ID == id).FirstOrDefault(); //Find the recipe by its ID in the database
             return View(RecipebyID);
         }
         [HttpPost]

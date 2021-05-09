@@ -54,7 +54,7 @@ namespace ProjectCRUDApp.Repositories
             }
         }
 
-        public void Save()
+        void IRepositoryWrapper.Save()
         {
             _repoContext.SaveChanges();
         }
