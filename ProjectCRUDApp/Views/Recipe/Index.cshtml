@@ -34,28 +34,34 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    <img src="@item.PictureURL" style="height:128px;" />
-                </td>
+        <tr>
+            <td>
+                <img src="@item.PictureURL" style="height:128px;" />
+            </td>
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.RecipeName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Ingredients)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Method)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Servings)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LevelofDifficulty)
-                </td>
-                >
-            </tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecipeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingredients)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Method)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Servings)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LevelofDifficulty)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Update", new { id = item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID }) |
+
+            </td>
+            >
+        </tr>
         }
     </tbody>
 </table>
