@@ -59,6 +59,16 @@ stages:
             WebAppName: 'farzana-food-app'
             packageForLinux: '$(System.DefaultWorkingDirectory)/'
             RuntimeStack: 'DOTNETCORE|5.0'
+            
+  - stage: test
+    displayName: 'tests'
+
+    #build jobs
+    jobs: 
+      - job: unit_test
+        displayName: 'tests'
+
+        steps:
            # Run tests and auto publish test results.
           
         - task: DotNetCoreCLI@2
