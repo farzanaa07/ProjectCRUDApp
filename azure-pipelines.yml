@@ -59,7 +59,24 @@ stages:
             WebAppName: 'farzana-food-app'
             packageForLinux: '$(System.DefaultWorkingDirectory)/'
             RuntimeStack: 'DOTNETCORE|5.0'
-            
+
+          #testing
+  - stage: testing
+    displayName: 'Unit Testing'
+#test job
+    jobs:
+      - job: test
+        pool:
+              farzana-agent-pool 
+        steps:
+
         - task: DotNetCoreCLI@2
           inputs:
            command: 'test'
+
+      
+        - task: PublishTestResults@2
+          inputs:
+            testResultsFormat: 'XUnit'
+            testResultsFiles: '**/TEST-*.xml'
+            testRunTitle: 'Unit testing'
