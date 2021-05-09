@@ -52,4 +52,11 @@ I added three stages to my pipeline:
 - Deploy - this will put application on web server so that it can be used on the internet (in this case, through Azure App Service)
 - Test - this stage will run any Unit Testing which will validate that the code will perform as expected.
 ![image](https://user-images.githubusercontent.com/70802911/117572535-38a32e00-b0cb-11eb-9e42-bd3a76c3d3e8.png)
-Although all three of my stages were successfully implemented, I was unable to access my app through 
+![image](https://user-images.githubusercontent.com/70802911/117574453-10203180-b0d5-11eb-91af-adf5bb030ed8.png)
+
+Although all three of my stages were successfully implemented, I was unable to access my app through the Azure Web App and unable to deploy my app through the Pipeline completely. This meant that I had to deploy the app manually through Azure App Service in the Azure Portal.
+
+
+Testing
+
+
