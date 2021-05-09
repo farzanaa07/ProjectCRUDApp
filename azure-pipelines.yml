@@ -60,17 +60,6 @@ stages:
             packageForLinux: '$(System.DefaultWorkingDirectory)/'
             RuntimeStack: 'DOTNETCORE|5.0'
             
-  - stage: test
-    displayName: 'tests'
-
-    #build jobs
-    jobs: 
-      - job: unit_test
-        displayName: 'tests'
-
-        steps:
-           # Run tests and auto publish test results.
-          
         - task: DotNetCoreCLI@2
           inputs:
            command: 'test'
