@@ -34,11 +34,7 @@ namespace FoodTest
         private Mock<IAddRecipe> addRecipeMock;
 
         private AddRestaurantBindingModel addRestaurant;
-        private Restaurant Restaurant;
-        private List<Restaurant> Restaurants;
-        private Mock<IRestaurant> RestaurantMock;
-        private List<IRestaurant> RestaurantsMock;
-        private Mock<IAddRestaurant> addRestaurantMock;
+
       
         public FoodControllerTest()
         {
