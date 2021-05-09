@@ -59,4 +59,8 @@ Although all three of my stages were successfully implemented, I was unable to a
 
 Testing
 
+I was able to test three of my controllers using XUnit Testing, each of which had a testing coverage of over 65%, as shown in the picture below.
+![image](https://user-images.githubusercontent.com/70802911/117575158-7fe3eb80-b0d8-11eb-9d53-15a2ac5a5aea.png)
+To be able to do the testing, I had to use repository patterning and mocking. I was able to complete 15 tests, which can also be seen in my pipeline:
+![image](https://user-images.githubusercontent.com/70802911/117575362-56778f80-b0d9-11eb-944b-24ad5782f2db.png)
 
