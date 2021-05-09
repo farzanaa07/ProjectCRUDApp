@@ -36,7 +36,17 @@ Create posts of the restaurants that sell each of the food that the user has pro
 Users are also able to read each post, update each post and delete the post if they wish.
 
 Architecture
+
 Database structure
-I have created an Entity Relationship Diagram below that showsthe relationship between my tables in the relational database:
+I have created an Entity Relationship Diagram below that shows the relationship between my tables in the relational database:
+
 ![image](https://user-images.githubusercontent.com/70802911/117570224-27edba80-b0c1-11eb-8580-d6a56ce99550.png)
 
+This shows that there is a one to many relationship between the Food table and the Recipe table as well as another one to mant relationship between the Food table and the Restaurant table. This means that the user is able to create many recipe posts and restaurant posts for every one food post.
+
+CI Pipeline
+To be able to deploy my web application on Azure App Service, I create a pipeline in Azure DevOps. This required me to create a virtual machine in Linux as well as a build agent to implement into the pipeline so that my pipeline was successfully built. 
+I added three stages to my pipeline:
+- Build - this will be the stage in which the application is compiled.
+- Deploy - this will put application on web server so that it can be used on the internet (in this case, through Azure App Service)
+- Test - this stage will run any Unit Testing which will validate that the code will perform as expected.
