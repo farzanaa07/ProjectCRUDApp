@@ -64,8 +64,10 @@ I was able to test three of my controllers using XUnit Testing, each of which ha
 To be able to do the testing, I had to use repository patterning and mocking. I was able to complete 15 tests, which can also be seen in my pipeline:
 ![image](https://user-images.githubusercontent.com/70802911/117575362-56778f80-b0d9-11eb-944b-24ad5782f2db.png)
 
-<<<<<<< HEAD
-xx
-=======
-xcx
->>>>>>> master
+
+Project Tracking
+Jira was used to track the progress of my project and allowed me to look at the different parts of the project so I knew what was needed to be done.
+
+https://farzanaakter1.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=RCA&selectedIssue=RCA-14&atlOrigin=eyJpIjoiZDMxMjYzMjlmMmIyNDg1ZmFlY2FhMjE3NjFlYzVhZDciLCJwIjoiaiJ9
+![image](https://user-images.githubusercontent.com/70802911/117580000-9cd6e980-b0ed-11eb-97db-2a46fe9af953.png)
+
