@@ -6,6 +6,7 @@ The brief provided to us for this project sets the following out as its overall 
 This means that I must create a functional CRUD web application in ASP.Net using C# and test the code I produce. I must also produce a functional Azure DevOps pipeline that will deploy my code.
 
 My web application
+
 I have produced a CRUD web application to store information about my favourite foods. This means that I will be able to create, read, update and delete any entries of food. There is also a table for creating recipes relating to each foods as well as data about restaurants that sell that particular type of food. 
 My food web application allows users to:
 
@@ -50,3 +51,5 @@ I added three stages to my pipeline:
 - Build - this will be the stage in which the application is compiled.
 - Deploy - this will put application on web server so that it can be used on the internet (in this case, through Azure App Service)
 - Test - this stage will run any Unit Testing which will validate that the code will perform as expected.
+![image](https://user-images.githubusercontent.com/70802911/117572535-38a32e00-b0cb-11eb-9e42-bd3a76c3d3e8.png)
+Although all three of my stages were successfully implemented, I was unable to access my app through 
