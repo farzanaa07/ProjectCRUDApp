@@ -37,4 +37,6 @@ Users are also able to read each post, update each post and delete the post if t
 
 Architecture
 Database structure
-I have created an Entity Relationship Diagram below that showsthe relationship between my tables in the relational database
+I have created an Entity Relationship Diagram below that showsthe relationship between my tables in the relational database:
+![image](https://user-images.githubusercontent.com/70802911/117570224-27edba80-b0c1-11eb-8580-d6a56ce99550.png)
+
