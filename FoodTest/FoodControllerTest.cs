@@ -27,13 +27,8 @@ namespace FoodTest
         private readonly Mock<IUpdateFood> updatefoodMock;
        
         private AddRecipeBindingModel addRecipe;
-        private Recipe Recipe;
-        private List<Recipe> Recipes;
-        private Mock<IRecipe> RecipeMock;
-        private List<IRecipe> RecipesMock;
-        private Mock<IAddRecipe> addRecipeMock;
-
-        private AddRestaurantBindingModel addRestaurant;
+       
+       private AddRestaurantBindingModel addRestaurant;
 
       
         public FoodControllerTest()
