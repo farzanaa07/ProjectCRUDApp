@@ -1,4 +1,4 @@
-# ProjectCRUDApp
+Farzana's Food CRUD App
 
 Brief
 The brief provided to us for this project sets the following out as its overall objective: "To create a CRUD application with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training."
@@ -66,6 +66,7 @@ To be able to do the testing, I had to use repository patterning and mocking. I 
 
 
 Project Tracking
+
 Jira was used to track the progress of my project and allowed me to look at the different parts of the project so I knew what was needed to be done.
 
 https://farzanaakter1.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=RCA&selectedIssue=RCA-14&atlOrigin=eyJpIjoiZDMxMjYzMjlmMmIyNDg1ZmFlY2FhMjE3NjFlYzVhZDciLCJwIjoiaiJ9
@@ -74,3 +75,7 @@ I added columns in my Jira board so that there was a column for each of the elem
 
 Front End Design
 I used ASP.Net and C# to create the front end designs. The user is able to open the app to the Home page which has links to the relevant tables. I used HTML to be able to do this in ASP.NET
+
+Risk Assessment
+Screenshot of the risk assessment matrix is pictured below.
+![image](https://user-images.githubusercontent.com/70802911/117581766-69e52380-b0f6-11eb-88ee-54a2d5d423bb.png)
