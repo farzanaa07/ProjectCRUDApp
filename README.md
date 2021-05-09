@@ -64,4 +64,8 @@ I was able to test three of my controllers using XUnit Testing, each of which ha
 To be able to do the testing, I had to use repository patterning and mocking. I was able to complete 15 tests, which can also be seen in my pipeline:
 ![image](https://user-images.githubusercontent.com/70802911/117575362-56778f80-b0d9-11eb-944b-24ad5782f2db.png)
 
+<<<<<<< HEAD
 xx
+=======
+xcx
+>>>>>>> master
