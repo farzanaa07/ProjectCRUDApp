@@ -1,4 +1,4 @@
-# ProjectCRUDApp
+Farzana's Food CRUD App
 
 Brief
 The brief provided to us for this project sets the following out as its overall objective: "To create a CRUD application with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training."
@@ -64,8 +64,18 @@ I was able to test three of my controllers using XUnit Testing, each of which ha
 To be able to do the testing, I had to use repository patterning and mocking. I was able to complete 15 tests, which can also be seen in my pipeline:
 ![image](https://user-images.githubusercontent.com/70802911/117575362-56778f80-b0d9-11eb-944b-24ad5782f2db.png)
 
-<<<<<<< HEAD
-xx
-=======
-xcx
->>>>>>> master
+
+Project Tracking
+
+Jira was used to track the progress of my project and allowed me to look at the different parts of the project so I knew what was needed to be done.
+
+https://farzanaakter1.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=RCA&selectedIssue=RCA-14&atlOrigin=eyJpIjoiZDMxMjYzMjlmMmIyNDg1ZmFlY2FhMjE3NjFlYzVhZDciLCJwIjoiaiJ9
+![image](https://user-images.githubusercontent.com/70802911/117580000-9cd6e980-b0ed-11eb-97db-2a46fe9af953.png)
+I added columns in my Jira board so that there was a column for each of the elements: project planning, coding, testing and deployment. Once I completed my tasks, I would move the tasks to the completed column. I also included a column with all the user stories.
+
+Front End Design
+I used ASP.Net and C# to create the front end designs. The user is able to open the app to the Home page which has links to the relevant tables. I used HTML to be able to do this in ASP.NET
+
+Risk Assessment
+Screenshot of the risk assessment matrix is pictured below.
+![image](https://user-images.githubusercontent.com/70802911/117581766-69e52380-b0f6-11eb-88ee-54a2d5d423bb.png)
