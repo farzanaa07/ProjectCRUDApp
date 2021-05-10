@@ -121,7 +121,7 @@ namespace ProjectCRUDApp.Controllers
                 NameofDish = bindingModel.NameofDish,
                 Delivery = bindingModel.Delivery,
                 FoodID = bindingModel.FoodID,
-                PictureURL = "https://static01.nyt.com/images/2021/01/26/well/well-foods-microbiome/well-foods-microbiome-mobileMasterAt3x.jpg", //default picture
+                PictureURL = "", 
                 ratings = bindingModel.ratings,
                 CreatedAt = DateTime.Now
             };
@@ -162,7 +162,7 @@ namespace ProjectCRUDApp.Controllers
                 Method = bindingModel.Method,
                 Servings = bindingModel.Servings,
                 FoodID = bindingModel.FoodID,
-                PictureURL = "https://static01.nyt.com/images/2021/01/26/well/well-foods-microbiome/well-foods-microbiome-mobileMasterAt3x.jpg", //default picture
+                PictureURL = "", 
                 LevelofDifficulty = bindingModel.LevelofDifficulty,
                 CreatedAt = DateTime.Now
             };

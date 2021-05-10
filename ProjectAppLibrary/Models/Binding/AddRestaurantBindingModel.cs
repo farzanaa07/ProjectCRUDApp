@@ -15,5 +15,6 @@ namespace ProjectAppLibrary.Models.Binding
         public Boolean Delivery { get; set; }
         public string ratings { get; set; }
         public int FoodID { get; set; }
+        public string PictureURL { get; set; }
     }
 }

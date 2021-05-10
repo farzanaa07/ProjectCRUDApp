@@ -16,5 +16,6 @@ namespace ProjectAppLibrary.Models.Binding
         public int Servings { get; set; }
         public LevelofDifficulty LevelofDifficulty { get; set; }
         public int FoodID { get; set; }
+        public string PictureURL { get; set; }
     }
 }

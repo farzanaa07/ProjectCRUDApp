@@ -56,7 +56,7 @@ namespace ProjectCRUDApp.Controllers
         [Route("delete/{id:int}")]
         public IActionResult Delete(int id)
         {
-            var RestaurantToDelete = repository.Restaurant.FindByCondition(r => r.ID == id).FirstOrDefault();
+            var RestaurantToDelete = repository.Restaurant.FindByCondition(r => r.FoodID == id).FirstOrDefault();
             repository.Restaurant.Delete(RestaurantToDelete); //will remove restaurant from database
             repository.Save();
             return RedirectToAction("Index");
