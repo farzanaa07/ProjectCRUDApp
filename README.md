@@ -95,4 +95,3 @@ Improvements
 - make the app more aesthetically pleasing by using Bootstrap in CSS
 - ensure that the update and delete functions in my restaurant and recipe controllers functioned.
 - do more tests so that all three of my controllers reached 100% coverage and test the Home controller.
-- 
