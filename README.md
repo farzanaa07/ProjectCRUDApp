@@ -74,6 +74,7 @@ https://farzanaakter1.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKe
 ![image](https://user-images.githubusercontent.com/70802911/117580000-9cd6e980-b0ed-11eb-97db-2a46fe9af953.png)
 I added columns in my Jira board so that there was a column for each of the elements: project planning, coding, testing and deployment. Once I completed my tasks, I would move the tasks to the completed column. I also included a column with all the user stories.
 
+
 Front End Design
 I used ASP.Net and C# to create the front end designs. The user is able to open the app to the Home page which has links to the relevant tables. I used HTML to be able to do this in ASP.NET.
 Home page includes links to the list of foods, recipes and restaurants created by the user.
@@ -82,7 +83,9 @@ Home page includes links to the list of foods, recipes and restaurants created b
 The foods page shows a table of the different foods entered by the user with a column that includes links to edit and delete the food log, add or view recipes related to the food, and add or view restaurants that may sell the food.
 ![image](https://user-images.githubusercontent.com/70802911/117618214-85d3de00-b165-11eb-8b87-71f529e7cbb9.png)
 
+
 Risk Assessment
+
 Screenshot of the risk assessment matrix is pictured below.
 ![image](https://user-images.githubusercontent.com/70802911/117617321-49ec4900-b164-11eb-9354-71c1a41cfc1a.png)
 
