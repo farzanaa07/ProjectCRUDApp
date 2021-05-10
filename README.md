@@ -74,8 +74,15 @@ https://farzanaakter1.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKe
 I added columns in my Jira board so that there was a column for each of the elements: project planning, coding, testing and deployment. Once I completed my tasks, I would move the tasks to the completed column. I also included a column with all the user stories.
 
 Front End Design
-I used ASP.Net and C# to create the front end designs. The user is able to open the app to the Home page which has links to the relevant tables. I used HTML to be able to do this in ASP.NET
+I used ASP.Net and C# to create the front end designs. The user is able to open the app to the Home page which has links to the relevant tables. I used HTML to be able to do this in ASP.NET.
 
 Risk Assessment
 Screenshot of the risk assessment matrix is pictured below.
 ![image](https://user-images.githubusercontent.com/70802911/117581766-69e52380-b0f6-11eb-88ee-54a2d5d423bb.png)
+
+Improvements
+
+- make the app more aesthetically pleasing by using Bootstrap in CSS
+- ensure that the update and delete functions in my restaurant and recipe controllers functioned.
+- do more tests so that all three of my controllers reached 100% coverage and test the Home controller.
+- 
