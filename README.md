@@ -78,7 +78,8 @@ I used ASP.Net and C# to create the front end designs. The user is able to open 
 
 Risk Assessment
 Screenshot of the risk assessment matrix is pictured below.
-![image](https://user-images.githubusercontent.com/70802911/117581766-69e52380-b0f6-11eb-88ee-54a2d5d423bb.png)
+![image](https://user-images.githubusercontent.com/70802911/117617321-49ec4900-b164-11eb-9354-71c1a41cfc1a.png)
+
 
 Improvements
 
