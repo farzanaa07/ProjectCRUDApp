@@ -4,10 +4,9 @@ using ProjectAppLibrary.Models;
 using ProjectAppLibrary.Models.Binding;
 using ProjectCRUDApp.Repositories;
 using System;
-using System.Collections.Generic;
+
 using System.Linq;
-using System.Threading.Tasks;
-using TestingLibrary.Testing.InterfaceTesting;
+
 
 namespace ProjectCRUDApp.Controllers
 {
@@ -53,7 +52,7 @@ namespace ProjectCRUDApp.Controllers
                 Name = bindingModel.Name,
                 Cuisine = bindingModel.Cuisine,
                 Description = bindingModel.Description,
-                PictureURL = "https://theresident.wpms.greatbritishlife.co.uk/wp-content/uploads/sites/10/2020/07/Le-Pont-de-la-tour-Terrace-.jpg", //this will give you a default picture
+                PictureURL = "https://i1.wp.com/www.eatthis.com/wp-content/uploads/2020/12/unhealthiest-foods-planet.jpg?fit=1200%2C879&ssl=1", //this will give you a default picture
              CreatedAt = DateTime.Now
             };
             repository.Food.Create(foodToCreate);
@@ -121,7 +120,7 @@ namespace ProjectCRUDApp.Controllers
                 NameofDish = bindingModel.NameofDish,
                 Delivery = bindingModel.Delivery,
                 FoodID = bindingModel.FoodID,
-                PictureURL = "", 
+                PictureURL = "https://theresident.wpms.greatbritishlife.co.uk/wp-content/uploads/sites/10/2020/07/Le-Pont-de-la-tour-Terrace-.jpg", 
                 ratings = bindingModel.ratings,
                 CreatedAt = DateTime.Now
             };
@@ -162,7 +161,7 @@ namespace ProjectCRUDApp.Controllers
                 Method = bindingModel.Method,
                 Servings = bindingModel.Servings,
                 FoodID = bindingModel.FoodID,
-                PictureURL = "", 
+                PictureURL = "https://static01.nyt.com/images/2021/01/26/well/well-foods-microbiome/well-foods-microbiome-superJumbo.jpg", 
                 LevelofDifficulty = bindingModel.LevelofDifficulty,
                 CreatedAt = DateTime.Now
             };

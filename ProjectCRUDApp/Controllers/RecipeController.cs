@@ -1,12 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProjectAppLibrary;
 using ProjectAppLibrary.Models;
-using ProjectAppLibrary.Models.Binding;
 using ProjectCRUDApp.Repositories;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace ProjectCRUDApp.Controllers
 {
