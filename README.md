@@ -46,6 +46,7 @@ I have created an Entity Relationship Diagram below that shows the relationship 
 This shows that there is a one to many relationship between the Food table and the Recipe table as well as another one to mant relationship between the Food table and the Restaurant table. This means that the user is able to create many recipe posts and restaurant posts for every one food post.
 
 CI Pipeline
+
 To be able to deploy my web application on Azure App Service, I create a pipeline in Azure DevOps. This required me to create a virtual machine in Linux as well as a build agent to implement into the pipeline so that my pipeline was successfully built. 
 I added three stages to my pipeline:
 - Build - this will be the stage in which the application is compiled.
@@ -75,6 +76,11 @@ I added columns in my Jira board so that there was a column for each of the elem
 
 Front End Design
 I used ASP.Net and C# to create the front end designs. The user is able to open the app to the Home page which has links to the relevant tables. I used HTML to be able to do this in ASP.NET.
+Home page includes links to the list of foods, recipes and restaurants created by the user.
+![image](https://user-images.githubusercontent.com/70802911/117618169-76549500-b165-11eb-9b43-61c51264cf54.png)
+
+The foods page shows a table of the different foods entered by the user with a column that includes links to edit and delete the food log, add or view recipes related to the food, and add or view restaurants that may sell the food.
+![image](https://user-images.githubusercontent.com/70802911/117618214-85d3de00-b165-11eb-8b87-71f529e7cbb9.png)
 
 Risk Assessment
 Screenshot of the risk assessment matrix is pictured below.
