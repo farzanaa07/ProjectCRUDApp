@@ -74,6 +74,9 @@ https://farzanaakter1.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKe
 ![image](https://user-images.githubusercontent.com/70802911/117580000-9cd6e980-b0ed-11eb-97db-2a46fe9af953.png)
 I added columns in my Jira board so that there was a column for each of the elements: project planning, coding, testing and deployment. Once I completed my tasks, I would move the tasks to the completed column. I also included a column with all the user stories.
 
+![image](https://user-images.githubusercontent.com/70802911/123056254-9fbc3e00-d3fe-11eb-842a-cd621a18e776.png)
+
+
 
 Front End Design
 I used ASP.Net and C# to create the front end designs. The user is able to open the app to the Home page which has links to the relevant tables. I used HTML to be able to do this in ASP.NET.
